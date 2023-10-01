@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About"
+    android:background="#292929">
+
+    <TextView
+        android:id="@+id/TV4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp"
+
+        android:text="Người dùng"
+        android:textSize="35sp" />
+
+    <Button
+        android:id="@+id/btntoLogin"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Tài khoản"
+        android:textSize="20sp"
+        android:gravity="left|center_vertical"
+        android:padding="20dp"
+        android:drawablePadding="20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/menu_border"
+
+        android:layout_marginTop="90dp"
+        android:drawableLeft="@drawable/user"
+
+        />
+
+    <Button
+        android:id="@+id/btnsetting"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Cài đặt"
+        android:textSize="19sp"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="25dp"
+        android:drawablePadding="20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/menu_border"
+
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/setting"
+        android:layout_below="@id/btntoLogin"/>
+    <Button
+        android:id="@+id/btdangxuat"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/menu_border"
+        android:text="Đăng xuất"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        android:layout_marginTop="500dp"
+        />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@drawable/navigation_bg"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu_navigation" />
+
+</RelativeLayout>

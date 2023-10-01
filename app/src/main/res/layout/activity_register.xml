@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    >
+
+    <Button
+        android:id="@+id/btnRegister"
+
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:text="ĐĂNG KÍ NGAY"
+        android:layout_below="@id/RePassword"
+        android:layout_marginTop="45dp"
+        android:layout_centerHorizontal="true"
+
+        android:textColor="@color/white"
+        android:background="@drawable/button_border"/>
+    <Button
+        android:id="@+id/btntoDN"
+
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:text="ĐÃ CÓ TÀI KHOẢN? Đăng nhập Ngay"
+        android:layout_below="@id/btnRegister"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="8sp"
+
+        android:textColor="@color/white"
+        android:background="@drawable/button_border2"
+        />
+
+
+
+    <TextView
+        android:id="@+id/tvRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ĐĂNG KÍ TÀI KHOẢN"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+
+
+        />
+
+    <EditText
+        android:id="@+id/DKusername"
+
+        android:includeFontPadding="true"
+        android:paddingLeft="10dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Tên tài khoản"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tvRegister"
+        android:background="@drawable/khung"
+        android:layout_marginTop="20dp"
+
+
+
+        />
+
+    <EditText
+        android:id="@+id/DKPassword"
+
+        android:includeFontPadding="true"
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Mật khẩu"
+        android:layout_below="@id/DKusername"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="10dp"
+        android:background="@drawable/khung"/>
+    <EditText
+        android:layout_below="@id/DKPassword"
+
+        android:includeFontPadding="true"
+        android:paddingLeft="10dp"
+        android:id="@+id/RePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nhập lại mật khẩu"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="10dp"
+        android:background="@drawable/khung"/>
+
+
+</RelativeLayout>

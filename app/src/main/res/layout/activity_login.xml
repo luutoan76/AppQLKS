@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    >
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:text="ĐĂNG NHẬP NGAY"
+        android:layout_below="@id/edPassword"
+        android:layout_marginTop="45dp"
+        android:layout_centerHorizontal="true"
+
+        android:textColor="@color/white"
+        android:background="@drawable/button_border"/>
+    <Button
+        android:id="@+id/btnRegis"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:text="TẠO TÀI KHOẢN MỚI"
+        android:layout_below="@id/btnLogin"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="12sp"
+
+        android:textColor="@color/white"
+        android:background="@drawable/button_border2"
+
+        />
+
+    <TextView
+        android:id="@+id/forgotPW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quên mật khẩu"
+        android:layout_below="@id/edPassword"
+        android:layout_marginLeft="195dp"
+        android:layout_marginTop="4dp"
+        android:textSize="16sp"
+        android:textColor="#2596be"/>
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ĐĂNG NHẬP"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+
+
+        />
+
+    <EditText
+        android:includeFontPadding="true"
+        android:paddingLeft="10dp"
+        android:id="@+id/edUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Tên tài khoản"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tvLogin"
+        android:background="@drawable/khung"
+        android:layout_marginTop="20dp"
+
+
+
+        />
+
+    <EditText
+        android:includeFontPadding="true"
+        android:paddingLeft="10dp"
+        android:id="@+id/edPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Mật khẩu"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edUsername"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/khung"
+        />
+
+
+</RelativeLayout>
