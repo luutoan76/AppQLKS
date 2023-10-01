@@ -27,7 +27,7 @@
         android:layout_centerHorizontal="true"
         android:textSize="12sp"
 
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:background="@drawable/button_border2"
 
         />
@@ -61,7 +61,7 @@
         android:includeFontPadding="true"
         android:paddingLeft="10dp"
         android:id="@+id/edUsername"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
@@ -79,7 +79,7 @@
         android:includeFontPadding="true"
         android:paddingLeft="10dp"
         android:id="@+id/edPassword"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPassword"
